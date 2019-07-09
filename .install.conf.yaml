@@ -1,0 +1,12 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~', '~/.config']
+
+- link:
+    ~/.dotfiles_local: ''
+    ~/.name:
+    ~/.shell_local_after:
+    ~/.shell_local_before:

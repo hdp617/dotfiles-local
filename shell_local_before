@@ -1,0 +1,7 @@
+export EDITOR=vim
+
+# $PATH
+path_prepend "$HOME/bin"
+path_prepend "$HOME/homebrew/bin"
+
+export LD_LIBRARY_PATH=$HOME/homebrew/lib:$LD_LIBRARY_PATH
