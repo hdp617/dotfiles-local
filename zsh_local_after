@@ -1,11 +1,6 @@
-BREW_PREFIX=$(brew --prefix)
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '$BREW_PREFIX/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc' ]; then
-    . '$BREW_PREFIX/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc';
-fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '$BREW_PREFIX/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc' ]; then
-    . '$BREW_PREFIX/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc';
+# Google Cloud SDK
+GCLOUD_PATH="$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk"
+if [ -d ${GCLOUD_PATH} ]; then
+    . '$GCLOUD_PATH/path.zsh.inc';
+    . '$GCLOUD_PATH/completion.zsh.inc';
 fi
