@@ -1,6 +1,6 @@
 path_prepend "$HOME/bin"
+path_prepend "$HOME/homebrew/bin"
 
-# Homebrew might not be installed in the default location
 BREW_PREFIX=$(brew --prefix)
 
 # Homebrew and Related Tools
