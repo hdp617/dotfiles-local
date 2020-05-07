@@ -16,9 +16,6 @@ if [ -d ${GCLOUD_PATH} ]; then
     alias gcr='gcloud run'
     alias gaed='gcloud app deploy'
     alias gcfd='gcloud functions deploy'
-    alias gcfdu='gcloud functions deploy --allow-unauthenticated'
-    alias gcfduh='gcloud functions deploy --allow-unauthenticated --trigger-http'
-    alias gcfdue='gcloud functions deploy --trigger-event'
     alias gcrd='gcloud run deploy'
 fi
 
