@@ -6,10 +6,12 @@ export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_AUTO_UPDATE_SECS=86400
 
 # Go
+export GOPATH="$HOME/Workspace/go"
+path_prepend "$GOPATH/bin"
 
 # Google Cloud SDK
-GCLOUD_PATH="$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk"
-if [ -d ${GCLOUD_PATH} ]; then
+gcloud_path="$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk"
+if [ -d ${gcloud_path} ]; then
     alias gc='gcloud'
     alias gae='gcloud app'
     alias gcf='gcloud functions'
