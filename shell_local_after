@@ -1,25 +1,9 @@
 # Add scripts to path
 path_prepend "$HOME/.dotfiles_local/bin"
 
-# Homebrew
-export HOMEBREW_NO_ANALYTICS=1
-export HOMEBREW_AUTO_UPDATE_SECS=86400
-
 # Go
 export GOPATH="$HOME/.go"
 path_prepend "$GOPATH/bin"
-
-# Google Cloud SDK
-gcloud_path="$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk"
-if [ -d ${gcloud_path} ]; then
-    alias gc='gcloud'
-    alias gae='gcloud app'
-    alias gcf='gcloud functions'
-    alias gcr='gcloud run'
-    alias gaed='gcloud app deploy'
-    alias gcfd='gcloud functions deploy'
-    alias gcrd='gcloud run deploy'
-fi
 
 # Rust
 path_prepend "$HOME/.cargo/bin"

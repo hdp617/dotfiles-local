@@ -1,4 +1,0 @@
-if [ -d ${GCLOUD_PATH} ]; then
-    source "$GCLOUD_PATH/path.zsh.inc";
-    source "$GCLOUD_PATH/completion.zsh.inc";
-fi
