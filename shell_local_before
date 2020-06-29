@@ -1,7 +1,11 @@
-brew_prefix='/home/linuxbrew/.linuxbrew'
-
 path_prepend "$HOME/bin"
 
 # Homebrew and Related Tools
+if [ -d '/home/linuxbrew/.linuxbrew' ]; then
+    brew_prefix='/home/linuxbrew/.linuxbrew'
+else
+    brew_prefix="$HOME/.linuxbrew"
+fi
+
 path_prepend "$brew_prefix/sbin"
 path_prepend "$brew_prefix/bin"
