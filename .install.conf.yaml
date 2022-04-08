@@ -8,6 +8,7 @@
 - link:
     ~/.dotfiles_local: ''
     ~/.gitconfig_local:
+    ~/.hammerspoon:
     ~/.name:
     ~/.shell_local_after:
     ~/.shell_local_before:
