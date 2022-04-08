@@ -1,9 +1,1 @@
 path_prepend "$HOME/bin"
-
-# Homebrew
-export HOMEBREW_NO_ANALYTICS=1
-export HOMEBREW_AUTO_UPDATE_SECS=86400
-brew_prefix="/opt/homebrew"
-path_prepend "$brew_prefix/sbin"
-path_prepend "$brew_prefix/bin"
-
