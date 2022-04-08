@@ -1,5 +1,7 @@
 # Aliases
+alias g=gcloud
 alias k=kubectl
+alias tf=terraform
 
 # Add scripts to path
 path_prepend "$HOME/.dotfiles_local/bin"
