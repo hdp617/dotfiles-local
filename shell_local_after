@@ -1,2 +1,5 @@
 # Add scripts to path
 path_prepend "$HOME/.dotfiles_local/bin"
+
+# Load secrets
+load_secret 'GEMINI_API_KEY'
